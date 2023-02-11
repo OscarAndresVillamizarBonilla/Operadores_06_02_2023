@@ -1,0 +1,33 @@
+table{
+    border-spacing: 0;
+    font-family: Times;
+    text-align: right;
+}
+th, td{
+    border: 3px solid #000000;
+}
+td, th{
+    border-right-width: 0;
+    border-bottom-width: 0; 
+    
+}
+tr th:last-child,
+tr td:last-child{
+    border-right-width: 3px;
+}
+tr:last-child td{
+    border-bottom-width: 3px;
+    font-weight: bolder; 
+    background: #5c4fd1;
+    color: #ffffff;
+    border-color: #ff0000;
+}
+th{
+    background: #5c4fd1;
+}
+td{
+    background: rgb(70, 71, 70);
+}
+tr:last-child th{
+    font-weight: normal;
+}
