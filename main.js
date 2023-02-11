@@ -1,9 +1,9 @@
-let a = confirm("Esta es la variable A\n\t\tPulsa Aceptar si quieres que sea un Boleano Verdadero(True)\n\t\tPulsa Cancelar si quieres que sea un boleano Falso(False)")
-let b = confirm("Esta es la variable B\n\t\tPulsa Aceptar si quieres que sea un Boleano Verdadero(True)\n\t\tPulsa Cancelar si quieres que sea un boleano Falso(False)")
+//Not define tu boleano de manera contraria a la opcion escogida. ejm si se seleccion true, sera false.
+let a = confirm("Define tu variable:\n\t\tSi quieres que tu boleano sea Verdadero(True) pulsa Cancelar\n\t\tDe lo contrario pulsa Aceptar");
 
 let cuerpo = document.querySelector("#myAND");
 cuerpo.insertAdjacentHTML("beforeend", ` <tr>
+                                            
                                             <td>${a}</td>
-                                            <td>${b}</td>
-                                            <td>${a || b}</td>
+                                            <td>${!a}</td>
                                         </tr>`);
